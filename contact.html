@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Backpacker Hostel | Contact</title>
+    <link rel="stylesheet" href="../hostel3/css/style.css">
+</head>
+<body>
+    <!-- Header area: branding; nav; image; h1; p;  -->
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Backpacker</span> Hostel</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="facilities.html">Facilities</a></li>
+                    <li> <a href="cafe.html">Cafe</a></li>
+                    <li> <a href="directions.html">Getting Here</a></li>
+                    <li class="current"> <a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+            <div class="container">
+                <h1>Backpacker Hostel</h1>
+                <p>Scotland's most celebrated scenery!</p>
+            </div>
+        </section>
+    <!-- Option to sign up for news and updates -->
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe to local news</h1>
+            <!-- TODO -->
+            <form action="subscribe.php"> 
+                <!-- HTML5 we can use emil type, -->
+                <!-- We also dont need to close with "/>" in HTML5 -->
+                <input type="email" placeholder="Enter Email...">
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Section: Contact -->
+
+    <section class="contact_form" id="s_contact">
+            <div class="container">
+              <h2>Contact Us</h2>
+              <p>Drop Us a line</p>
+              
+              <div class="column">
+                <form method="POST" action="../hostel3/mail.php" >
+                  <label for="fname">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name..">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Your Email..">
+                  <label for="subject">Subject</label>
+                  <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+              <div class="column">
+                    <div id="googleMap"></div>
+                    <script src="../hostel3/scripts/scripts.js"></script>
+                    <!-- <script src="../hostel3/scripts/scripts.js"></script> -->
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH0EBPlFaX4TgGK_RPJI5gFAFuDN2y2tA&callback=initMap"></script>
+              </div>
+            </div>
+    </section>
+    <footer>
+        <p>Backpacker Hostel, Copyright  &copy; 2019</p>
+    </footer>    
+</body>
+</html>
