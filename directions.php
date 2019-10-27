@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../hostel3/css/style.css">
 </head>
 <body>
-    <!-- Header area: branding; nav; image; h1; p;  -->
+<!-- Header area: branding; nav; image; h1; p;  -->
     <header>
         <div class="container">
             <div id="branding">
@@ -17,34 +17,17 @@
             <nav>
                 <ul>
                     <li> <a href="index.html">Home</a></li>
-                    <li> <a href="facilities.html">Facilities</a></li>
-                    <li> <a href="cafe.html">Cafe</a></li>
-                    <li class="current"> <a href="directions.html">Getting Here</a></li>
-                    <li> <a href="contact.html">Contact</a></li>
+                    <li> <a href="facilities.php">Facilities</a></li>
+                    <li class="current"> <a href="cafe.php">Cafe</a></li>
+                    <li> <a href="directions.php">Getting Here</a></li>
+                    <li> <a href="contact.php">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <!-- hero and newsletter -->
+    <?php include "_hero.php" ?>
 
-    <section id="hero">
-            <div class="container">
-                <h1>Backpacker Hostel</h1>
-                <p>Scotland's most celebrated scenery!</p>
-            </div>
-        </section>
-    <!-- Option to sign up for news and updates -->
-    <section id="newsletter">
-        <div class="container">
-            <h1>Subscribe to local news</h1>
-            <!-- TODO -->
-            <form action="subscribe.php"> 
-                <!-- HTML5 we can use emil type, -->
-                <!-- We also dont need to close with "/>" in HTML5 -->
-                <input type="email" placeholder="Enter Email...">
-                <button type="submit" class="button_1">Subscribe</button>
-            </form>
-        </div>
-    </section>
 
     <!-- Main - Directions -->
 

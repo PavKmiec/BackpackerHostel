@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../hostel3/css/style.css">
 </head>
 <body>
-    <!-- Header area: branding; nav; image; h1; p;  -->
+<!-- Header area: branding; nav; image; h1; p;  -->
     <header>
         <div class="container">
             <div id="branding">
@@ -17,34 +17,16 @@
             <nav>
                 <ul>
                     <li> <a href="index.html">Home</a></li>
-                    <li> <a href="facilities.html">Facilities</a></li>
-                    <li> <a href="cafe.html">Cafe</a></li>
-                    <li> <a href="directions.html">Getting Here</a></li>
-                    <li class="current"> <a href="contact.html">Contact</a></li>
+                    <li> <a href="facilities.php">Facilities</a></li>
+                    <li class="current"> <a href="cafe.php">Cafe</a></li>
+                    <li> <a href="directions.php">Getting Here</a></li>
+                    <li> <a href="contact.php">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <section id="hero">
-            <div class="container">
-                <h1>Backpacker Hostel</h1>
-                <p>Scotland's most celebrated scenery!</p>
-            </div>
-        </section>
-    <!-- Option to sign up for news and updates -->
-    <section id="newsletter">
-        <div class="container">
-            <h1>Subscribe to local news</h1>
-            <!-- TODO -->
-            <form action="subscribe.php"> 
-                <!-- HTML5 we can use emil type, -->
-                <!-- We also dont need to close with "/>" in HTML5 -->
-                <input type="email" placeholder="Enter Email...">
-                <button type="submit" class="button_1">Subscribe</button>
-            </form>
-        </div>
-    </section>
+    <!-- hero and newsletter -->
+    <?php include "_hero.php" ?>
 
 
     <!-- Section: Contact -->
@@ -55,9 +37,20 @@
               <p>Drop Us a line</p>
               
               <div class="column">
-                <form method="POST" action="../hostel3/mail.php" >
-                  <label for="fname">Name</label>
-                  <input type="text" id="name" name="name" placeholder="Your name..">
+                <form method="POST" action="../hostel3/contactInsert.php" >
+
+                <!-- Side -->
+                <div class="full-name">
+                    <div class="cell">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Your first name..">
+                    </div>
+                    <div class="cell">
+                        <label for="fname">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Your last name..">
+                    </div>
+                </div>
+
                   <label for="email">Email</label>
                   <input type="text" id="email" name="email" placeholder="Your Email..">
                   <label for="subject">Subject</label>

@@ -366,6 +366,15 @@ body {
                 background-color: #45a049;
             }
 
+            .full-name {  
+                display: table;
+                width: 100%;
+            }
+
+            .cell {
+                display: table-cell;
+            }
+
 
             
             /* Style the container/contact section */
@@ -383,6 +392,11 @@ body {
             }
 
 
+            /* Survey */
+            
+   
+
+
   
 
      footer {
@@ -392,6 +406,9 @@ body {
          color: #fff;
          background-color: #65b1ff ;
     }
+
+
+
 
 
   
@@ -477,6 +494,18 @@ body {
           }
 
           
+
+          /* Contact form */
+          /* unset the fname, lname */
+
+          .full-name {  
+            display: unset;
+            width: unset;
+        }
+
+        .cell {
+            display: unset;
+        }
 
       }
 
