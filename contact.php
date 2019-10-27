@@ -18,9 +18,10 @@
                 <ul>
                     <li> <a href="index.html">Home</a></li>
                     <li> <a href="facilities.php">Facilities</a></li>
-                    <li class="current"> <a href="cafe.php">Cafe</a></li>
+                    <li> <a href="cafe.php">Cafe</a></li>
                     <li> <a href="directions.php">Getting Here</a></li>
-                    <li> <a href="contact.php">Contact</a></li>
+                    <li class="current"> <a href="contact.php">Contact</a></li>
+                    <li> <a href="survey.php">Survey</a></li>
                 </ul>
             </nav>
         </div>
