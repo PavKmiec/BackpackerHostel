@@ -51,9 +51,9 @@
 
     <h4>Choose whatever feels right</h4>
     <p>... or just tell us wchich mode of tramsport did you use most recentley</p>
-    <input id="transport-bus" type="radio" name="bus"><label for="transport-bus">Bus</label>
+    <input id="transport-bus" type="radio" name="transport"><label for="transport-bus">Bus</label>
     <br>
-    <input id="transport-bus" type="radio" name="bus"><label for="format-h">Car</label>
+    <input id="transport-car" type="radio" name="transport"><label for="transport-car">Car</label>
     
     <h4>How often do you look out the window?</h4>
     <select id="frequency">
